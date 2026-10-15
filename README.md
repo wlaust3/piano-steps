@@ -116,6 +116,9 @@ allow "Install unknown apps" for that file manager when asked.
   weak-fundamental / strong-harmonic octave-error cases, noise/silence rejection, calibration math, note matching and
   near-miss logic, rhythm windows, streak logic, onset/note stabilisation, keyboard policy, parent gate, lesson data).
 - `./gradlew assembleDebug` - builds a debug APK.
+- Smoke test: the APK installed and launched on a software-emulated Android 11 (API 30, x86_64) emulator and drew the first-run
+  calibration screen with no crash in logcat. That emulator was too slow to interact with (no KVM on the build box), so no other
+  screen, touch interaction, mic capture or audio playback was exercised.
 
 **Not verified**
 - **Not tested on a real piano, real room or real child.** All pitch tests use synthesized signals. Real piano attack
