@@ -1,0 +1,8 @@
+<resources>
+    <style name="Theme.PianoSteps" parent="android:Theme.Material.Light.NoActionBar">
+        <item name="android:windowBackground">@color/ps_background</item>
+        <item name="android:statusBarColor">@color/ps_background</item>
+        <item name="android:navigationBarColor">@color/ps_background</item>
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+</resources>
