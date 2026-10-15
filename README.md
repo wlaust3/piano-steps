@@ -56,7 +56,7 @@ export ANDROID_HOME=$HOME/android-sdk        # or put sdk.dir=... in local.prope
 
 A prebuilt debug APK is attached to the
 [GitHub release](https://github.com/wlaust3/piano-steps/releases/tag/v0.1.0-prototype). A CI workflow
-is defined in [`docs/ci-build.yml`](docs/ci-build.yml) (unit tests + debug APK artifact). **It is not active yet:** the GitHub token used to push this repo lacks the `workflow` scope, so GitHub refused a file under `.github/workflows/`. To enable it, run `gh auth refresh -s workflow` (or paste the file in via the GitHub web UI) and `mkdir -p .github/workflows && git mv docs/ci-build.yml .github/workflows/build.yml`.
+([`.github/workflows/build.yml`](.github/workflows/build.yml)) runs the unit tests and builds the debug APK on every push to `main` and every pull request, and uploads the APK as a build artifact.
 
 ## Install on a phone or tablet over USB (no Play Store)
 
